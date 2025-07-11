@@ -1,0 +1,11 @@
+canvas {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #333;
+  background: url("desert_strike.png") no-repeat;
+  background-size: cover;
+}
+
+.controls {
+  font-size: 2rem;
+}

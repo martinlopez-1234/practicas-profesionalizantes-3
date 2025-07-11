@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rociador</title>
+    <link rel="stylesheet" href="main.css">
+    </head>
+<body>
+
+    <h1>Rociador Interactivo</h1>
+
+    <div class="rociador">
+    <div id="agua" class="agua" style="height: 100%;"></div>
+    </div>
+    <div id="nivel">500 ml</div>
+
+    <div class="controles">
+    <button onclick="rociador.rociar()">Rociar</button>
+    <button onclick="rociador.llenar()">Llenar</button>
+    <button onclick="rociador.vaciar()">Vaciar</button>
+    <select onchange="rociador.cambiarIntensidad(this.value)">
+        <option value="leve">Leve</option>
+        <option value="medio" selected>Medio</option>
+        <option value="fuerte">Fuerte</option>
+    </select>
+    </div>
+
+    <script src="rociador.js"></script>
+</body>
+</html>
