@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SISTEMAS DE OBJETOS II</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Creacion de Figuras Geometricas</h1>
+    <div class="container-plane">
+      <div class="controls">
+        <input type="color" id="color-picker" value="#000" />
+        <button id="btn-circ">Crear Circulo</button>
+        <button id="btn-rect">Crear Rectangulo</button>
+        <button id="btn-triang-eq">Crear Triangulo</button>
+        <h4>Figura activa: <span id="active-figure">Ninguna</span></h4>
+      </div>
+
+      <div class="canvas-container">
+        <canvas id="canvas" width="500" height="400"></canvas>
+        <table id="figures-table" class="table-figures">
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>ID</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
