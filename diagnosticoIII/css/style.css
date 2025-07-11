@@ -1,0 +1,57 @@
+#title {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 1px;
+    background-color: azure; /* para que no se mezcle con el fondo */
+    padding: 10px;
+    z-index: 1000;
+}
+
+#calculadora {
+    margin-top: 80px; /* deja espacio para que el título no lo tape */
+}
+
+#visorSecundario-calculadora{
+    width: 200px;
+    text-align: right;
+    padding: 10px;
+    border:2px solid rgb(131, 84, 84);
+    background-color: #e0e0e0;
+    box-shadow: inset 0 0 5px #d6d2d2; 
+}
+
+#visorPrincipal-calculadora{
+    width: 200px;
+    text-align: right;
+    padding: 10px;
+    border:2px solid black;
+    background-color: #e0e0e0;
+    box-shadow: inset 0 0 5px #aaa; 
+}
+
+body {
+    min-height: 50vh;
+    place-items: center;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(7, 7, 43);
+    font-size: 15px;
+    padding: 15px 20px;
+    
+}
+/*Con esto le doy estilo a la entrada de datos del usuario a la calculadora*/
+#panel-datos {
+    display: block;
+    padding: 3px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
